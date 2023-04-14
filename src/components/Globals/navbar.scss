@@ -1,0 +1,134 @@
+$containere-width :1400px;
+$links-font-family: "Montserrat", sans-serif;
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #013914;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: 0.5s all ease;
+
+  &.active {
+    background-color: white;
+    color: black;
+
+    button {
+      background-color: white !important;
+      color: #1dbf73 !important;
+      border: 1px solid #1dbf73 !important;
+    }
+  }
+
+  .container {
+    width: $containere-width;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+
+    .logo {
+      font-size: 34px;
+      font-weight: bold;
+      .brand {
+      }
+      .dot {
+        color: #1dbf73;
+      }
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-weight: 500;
+      font-family: $links-font-family;
+
+      .user{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        position: relative;
+
+        .user-imagee{
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .options{
+            position: absolute;
+            list-style: none;
+            top: 50px;
+            right: 0;
+            padding: 20px 0;
+            border-radius: 10px;
+            background-color: white;
+            border: 1px solid lightgray;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            color: gray;
+            width: 200px;
+            font-weight: 300;
+
+            .option{
+                width: 100%;
+                min-height: 24px;
+                transition: all ease-in-out .3s;   
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                &:hover{
+                    background-color: lightgray;
+                }
+
+                .option__title{
+                    padding: 4px 20px;
+                }
+            }
+        }
+      }
+
+      span {
+      }
+
+      .join-btn {
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 1px solid #fff;
+        cursor: pointer;
+        background-color: transparent;
+        transition: .3s all ease-in-out;
+
+        &:hover {
+            background-color: #1baa67;
+            border-color: #1dbf73;
+          }
+      }
+
+    }
+  }
+
+  hr{
+    width: 100%;
+    height: 0;
+    border: 1px solid lightgray;
+  }
+
+  .menu{
+    width: $containere-width;
+    padding: 14px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    font-family: $links-font-family;
+  }
+}
