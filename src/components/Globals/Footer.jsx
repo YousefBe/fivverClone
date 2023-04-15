@@ -67,16 +67,16 @@ function Footer() {
         <hr />
         <div className="bottom">
           <div className="left">
-            <h2>liverr</h2>
+            <h2>Fiverr</h2>
             <span>© Liverr International Ltd. 2023</span>
           </div>
           <div className="right">
             <div className="social">
-              <img src="./img/twitter.png" alt="" />
-              <img src="./img/facebook.png" alt="" />
-              <img src="./img/linkedin.png" alt="" />
-              <img src="./img/pinterest.png" alt="" />
-              <img src="./img/instagram.png" alt="" />
+              <img src="/img/twitter.png" alt="" />
+              <img src="/img/facebook.png" alt="" />
+              <img src="/img/linkedin.png" alt="" />
+              <img src="/img/pinterest.png" alt="" />
+              <img src="/img/instagram.png" alt="" />
             </div>
             <div className="link">
               <img src="/img/language.png" alt="" />
